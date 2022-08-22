@@ -9,6 +9,85 @@
 	
 	<link rel="shortcut icon" href="img/favicon.png">
 	
+
+	<style class="INLINE_PEN_STYLESHEET_ID" > 
+		body {
+	  font-family: "lato", sans-serif;
+	}
+	
+	.container {
+	  max-width: 1000px;
+	  margin-left: auto;
+	  margin-right: auto;
+	  padding-left: 10px;
+	  padding-right: 10px;
+	}
+	
+	h2 {
+	  font-size: 26px;
+	  margin: 20px 0;
+	  text-align: center;
+	}
+	h2 small {
+	  font-size: 0.5em;
+	}
+	
+	.responsive-table li {
+	  border-radius: 3px;
+	  padding: 25px 30px;
+	  display: flex;
+	  justify-content: space-between;
+	  margin-bottom: 25px;
+	}
+	.responsive-table .table-header {
+	  background-color: #2f3535;
+	  font-size: 14px;
+	  text-transform: uppercase;
+	  letter-spacing: 0.03em;
+	}
+	.responsive-table .table-row {
+	  background-color: #ffffff;
+	  box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
+	}
+	.responsive-table .col-1 {
+	  flex-basis: 10%;
+	}
+	.responsive-table .col-2 {
+	  flex-basis: 40%;
+	}
+	.responsive-table .col-3 {
+	  flex-basis: 25%;
+	}
+	.responsive-table .col-4 {
+	  flex-basis: 25%;
+	}
+	@media all and (max-width: 767px) {
+	  .responsive-table .table-header {
+		display: none;
+	  }
+	  .responsive-table li {
+		display: block;
+	  }
+	  .responsive-table .col {
+		flex-basis: 100%;
+	  }
+	  .responsive-table .col {
+		display: flex;
+		padding: 10px 0;
+	  }
+	  .responsive-table .col:before {
+		color: #6C7A89;
+		padding-right: 10px;
+		content: attr(data-label);
+		flex-basis: 50%;
+		text-align: right;
+	  }
+	}
+	  
+	
+	</style>
+
+
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/materialize.min.css">
 	<link rel="stylesheet" href="css/slick.css">
@@ -28,7 +107,7 @@
 				<a href="#" data-activates="slide-out-right" class="sidenav-control-right"><i class="fa fa-bars"></i></a>
 			</div>
 			<div class="site-title">
-				<a href="home.html"><h1><i class="fa fa-star"></i>Stars</h1></a>
+				<a href="home3.html"><h1><i class="fa fa-star"></i>WEBTECH</h1></a>
 			</div>
 		</div>
 	</div>
@@ -96,11 +175,11 @@
 	<div class="slider-slick app-pages">
 		<div class="slider-entry">
 			
-			<img src="img/slider1.jpg" alt="">
+			<img src="img/slide1.jpeg" alt="">
 			<div class="overlay"></div>
 			<div class="caption">
 				<div class="container">
-					<h2>Stars Mobile Templates</h2>
+					<h2>ELECTRICIEN</h2>
 					<p>Lorem ipsum dolor sit amet</p>
 					<a class="button" href="">Read More</a>
 				</div>
@@ -108,21 +187,21 @@
 		</div>
 		<div class="slider-entry">
 			<div class="overlay"></div>
-			<img src="img/slider2.jpg" alt="">
+			<img src="img/slide2.jpg" alt="">
 			<div class="caption">
 				<div class="container">
-					<h2>Awesome Features</h2>
+					<h2>PLOMBIER</h2>
 					<p>Lorem ipsum dolor sit amet</p>
-					<a class="button" href="">Read More</a>
+					<a class="button" href="./home4.html">Read More</a>
 				</div>
 			</div>
 		</div>
 		<div class="slider-entry">
 			<div class="overlay"></div>
-			<img src="img/slider3.jpg" alt="">
+			<img src="img/slide3.jpg" alt="">
 			<div class="caption">
 				<div class="container">
-					<h2>Perfect Templates</h2>
+					<h2>CLIMATISEUR</h2>
 					<p>Lorem ipsum dolor sit amet</p>
 					<a class="button" href="">Read More</a>
 				</div>
@@ -131,8 +210,59 @@
 	</div>
 	<!-- end slider -->
 
+	
+
+
+
+	<div class="container">
+		<h2>LISTE DES TECHNICIENS</h2>
+		<ul class="responsive-table">
+		  <li class="table-header">
+			<div class="col col-1">N° tel </div>
+			<div class="col col-2">Nom</div>
+			<div class="col col-3">Note</div>
+			<div class="col col-4">Disponibilité</div>
+		  </li>
+		  <li class="table-row">
+			<div class="col col-1" data-label="Job Id">0617889051</div>
+			<div class="col col-2" data-label="Customer Name">Ahmed alaoui</div>
+			<div class="col col-3" data-label="Amount">5/10</div>
+			<div class="col col-4" data-label="Payment Status">En ligne</div>
+		  </li>
+		  <li class="table-row">
+			<div class="col col-1" data-label="Job Id">0617567051</div>
+			<div class="col col-2" data-label="Customer Name">Brahim kortobi</div>
+			<div class="col col-3" data-label="Amount">8/10</div>
+			<div class="col col-4" data-label="Payment Status">En ligne</div>
+		  </li>
+		  <li class="table-row">
+			<div class="col col-1" data-label="Job Id">0617689061</div>
+			<div class="col col-2" data-label="Customer Name">Hamza bnnani</div>
+			<div class="col col-3" data-label="Amount">10/10</div>
+			<div class="col col-4" data-label="Payment Status">En ligne</div>
+		  </li>
+		  <li class="table-row">
+			<div class="col col-1" data-label="Job Id">0677959051</div>
+			<div class="col col-2" data-label="Customer Name">Amine blghiti</div>
+			<div class="col col-3" data-label="Amount">6/10</div>
+			<div class="col col-4" data-label="Payment Status">Hors ligne</div>
+		  </li>
+		  <li class="table-row">
+			<div class="col col-1" data-label="Job Id">0615786451</div>
+			<div class="col col-2" data-label="Customer Name">Abdrahim amrani</div>
+			<div class="col col-3" data-label="Amount">9/10</div>
+			<div class="col col-4" data-label="Payment Status">Hors ligne</div>
+		  </li>
+
+		  
+		</ul>
+	  </div>
+
+
+
+
 	<!-- offers -->
-	<div class="offers">
+	<!--<div class="offers">
 		<div class="container">
 			<div class="row">
 				<div class="col s6">
@@ -167,11 +297,11 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div>-->
 	<!-- end offers -->
 
 	<!-- gallery -->
-	<div class="gallery app-section app-bg-dark">
+	<!--<div class="gallery app-section app-bg-dark">
 		<div class="container">
 			<div class="app-title">
 				<h4>Gallery</h4>
@@ -202,11 +332,11 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div>-->
 	<!-- end gallery -->
 
 	<!-- testimonial -->
-	<div class="testimonial app-section app-bg-color">
+	<!--<div class="testimonial app-section app-bg-color">
 		<div class="container">
 			<div class="app-title">
 				<h4>Testimonial</h4>
@@ -233,11 +363,11 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> -->
 	<!-- end testimonial -->
 
 	<!-- latest news -->
-	<div class="latest-news app-section app-bg-dark">
+	<!--<div class="latest-news app-section app-bg-dark">
 		<div class="container">
 			<div class="app-title">
 				<h4>Latest News</h4>
@@ -288,7 +418,7 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> -->
 	<!-- end latest news -->
 	
 	<!-- footer -->
